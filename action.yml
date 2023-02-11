@@ -4,9 +4,9 @@ description: 'Simple Github Action based on Docker'
 
 inputs:
     program:
-        description: 'python '
+        description: 'Program to be called'
         required: true
-        default: 'python --version'
+        default: 'echo "Hello World from Program to be called!"'
 runs:
     using: 'docker'
     image: 'Dockerfile'
