@@ -1,0 +1,17 @@
+name: 'Simple Github Action'
+author: 'Nils Gaehlert'
+description: 'Simple Github Action based on Docker'
+
+inputs:
+    program:
+        description: 'python '
+        required: true
+        default: 'python -c "print('Hello World')"'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.program }}
+outputs:
+    time:
+        description: 'Action Completed'
