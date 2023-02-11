@@ -8,4 +8,4 @@ echo " === NOW RUNNING SOME OTHER STUFF ==="
 echo "Hello World from within Docker entrypoint.sh"
 python --version
 
-echo env
+env
