@@ -6,7 +6,7 @@ inputs:
     program:
         description: 'python '
         required: true
-        default: 'python -c "print('Hello World')"'
+        default: 'python -- version'
 runs:
     using: 'docker'
     image: 'Dockerfile'
