@@ -6,7 +6,7 @@ inputs:
     program:
         description: 'python '
         required: true
-        default: 'python -- version'
+        default: 'python --version'
 runs:
     using: 'docker'
     image: 'Dockerfile'
